@@ -1,0 +1,66 @@
+/* 🎮 GameBoard.css */
+
+/* Main game container */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* 4x4 grid for 3-player mode */
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 12px;
+  margin-top: 30px;
+}
+
+/* Each game cell */
+.cell {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.cell:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+/* Back and restart buttons */
+.back-btn {
+  margin-top: 30px;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  background: linear-gradient(90deg, #00bcd4, #3f51b5);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(63, 81, 181, 0.6);
+}
+
+.back-btn:hover {
+  background: linear-gradient(90deg, #3f51b5, #00bcd4);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+ 
